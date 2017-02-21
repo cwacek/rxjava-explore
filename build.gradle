@@ -1,0 +1,16 @@
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile 'io.reactivex:rxjava:1.1.6'
+    compile 'io.reactivex:rxjava-joins:0.22.0'
+}
